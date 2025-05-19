@@ -1,1 +1,28 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212; /* Фон для контраста */
+}
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotating-image {
+  width: 200px; /* Можно изменить размер */
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
